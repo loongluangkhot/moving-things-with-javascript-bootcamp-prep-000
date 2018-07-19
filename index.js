@@ -13,6 +13,14 @@ document.addEventListener('keydown', function(e) {
     case keyWhichDict[left]:
       moveLeft()
       break
-    case 
+    case keyWhichDict[up]:
+      moveUp()
+      break
+    case keyWhichDict[right]:
+      moveRight()
+      break
+    case keyWhichDict[down]:
+      moveDown()
+      break
   }
 })
