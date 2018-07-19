@@ -17,7 +17,6 @@ function offSetNum(offsetStr) {
 
 function moveLeft() {
   var leftNum = offSetNum(dodger.style.left)
-  console.log(leftNum)
   if (leftNum > 0) {
     dodger.style.left = `${leftNum - 1}px`
   }
@@ -26,8 +25,7 @@ function moveLeft() {
 
 function moveUp() {
   var bottomNum = parseInt(dodger.style.bottom.replace('px',''))
-  console.log(topNum)
-  if (topNum > 0) {
+  if (bottomNum > 0) {
     dodger.style.top = `${topNum - 1}px`
   }
 }
@@ -53,8 +51,7 @@ function moveDown() {
 
 
 document.addEventListener('keydown', function(e) {
-  console.log('im in')
-  computeStyle()
+  console.log('keydown')
   switch(e.which) {
     case keyWhichDict['left']:
       moveLeft()
