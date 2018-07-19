@@ -8,7 +8,9 @@ const keyWhichDict = {
 }
 
 var dodger = document.querySelector("#dodger")
-var dodgerHeight = window.getComputed
+var dodgerStyle = window.getComputedStyle(dodger)
+var dodgerHeight = dodgerStyle.height
+var dodgerWidth = dodgerStyle.width
 
 function offSetNum(offsetStr) {
   return parseInt(offsetStr.replace('px',''))
@@ -25,7 +27,7 @@ function moveLeft() {
 
 function moveUp() {
   var bottomNum = parseInt(dodger.style.bottom.replace('px',''))
-  if (bottomNum > 0) {
+  if (bottomNum + dodgerStyle.height < gameStyle.height) {
     dodger.style.top = `${topNum - 1}px`
   }
 }
