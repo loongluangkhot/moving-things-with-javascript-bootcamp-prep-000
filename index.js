@@ -22,7 +22,7 @@ function moveLeft() {
 
 function moveUp() {
   var topNum = parseInt(dodger.style.top.replace('px',''))
-  if (dodger.style.top > 0) {
+  if (topNum > 0) {
     dodger.style.top = `${topNum - 1}px`
   }
 }
