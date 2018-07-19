@@ -45,12 +45,11 @@ function moveRight() {
 }
 
 function moveDown() {
-  var bottomNum = parseInt(dodger.style.bottom.replace('px',''))
-  console.log(bottomNum)
+  var bottomNum = offsetNum(dodger.style.bottom)
   if (bottomNum > 0) {
     dodger.style.bottom = `${bottomNum - 1}px`
   }
-  
+  console.log(dodger.style.bottom)
 }
 
 
