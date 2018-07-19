@@ -36,7 +36,7 @@ function moveRight() {
 
 function moveDown() {
   var bottomNum = parseInt(dodger.style.bottom.replace('px',''))
-  if (dodger.style.bottom > 0) {
+  if (bottomNum > 0) {
     dodger.style.bottom = `${bottomNum - 1}px`
   }
   
