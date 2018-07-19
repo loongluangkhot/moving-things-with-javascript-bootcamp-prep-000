@@ -17,7 +17,8 @@ function offSetNum(offsetStr) {
 }
 
 function computeStyle() {
-  
+  dodgerStyle = window.getComputedStyle(dodger)
+  gameStyle = window.getComputedStyle(game)
 }
 
 
@@ -39,8 +40,8 @@ function moveUp() {
 }
 
 function moveRight() {
-  var leftNum = offSetNum(dodger.style.left)
-  var rightNum = offSetNum(game.style.width) - (offSetNum(dodger.style.width) + offSetNum(dodger.style.left))
+  var leftNum = offSetNum(dodgerStyle.left)
+  var rightNum = offSetNum(gameStyle.width) - (offSetNum(dodgerStyle.width) + offSetNum(dodgerStyle.left))
   console.log(rightNum)
   if (rightNum > 0) {
     dodger.style.right = `${rightNum - 1}px`
@@ -59,6 +60,7 @@ function moveDown() {
 
 document.addEventListener('keydown', function(e) {
   console.log('im in')
+  computeStyle()
   switch(e.which) {
     case keyWhichDict['left']:
       moveLeft()
