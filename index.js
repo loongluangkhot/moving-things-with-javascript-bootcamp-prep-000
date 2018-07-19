@@ -9,5 +9,5 @@ const keyWhichDict = {
 
 
 document.addEventListener('keydown', function(e) {
-  
+  switch(e.which)
 })
