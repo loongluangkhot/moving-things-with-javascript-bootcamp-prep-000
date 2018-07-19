@@ -29,7 +29,7 @@ function moveUp() {
 
 function moveRight() {
   var rightNum = parseInt(dodger.style.right.replace('px',''))
-  if (dodger.style.right > 0) {
+  if (rightNum > 0) {
     dodger.style.right = `${rightNum - 1}px`
   }
 }
