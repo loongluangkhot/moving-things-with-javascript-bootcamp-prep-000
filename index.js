@@ -14,6 +14,7 @@ console.log(left)
 
 function moveLeft() {
   var leftNum = parseInt(dodger.style.left.replace('px',''))
+  console.log(leftNum)
   if (leftNum > 0) {
     dodger.style.left = `${leftNum - 1}px`
   }
@@ -22,6 +23,7 @@ function moveLeft() {
 
 function moveUp() {
   var topNum = parseInt(dodger.style.top.replace('px',''))
+  console.log(topNum)
   if (topNum > 0) {
     dodger.style.top = `${topNum - 1}px`
   }
