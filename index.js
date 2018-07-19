@@ -31,14 +31,14 @@ function moveLeft() {
 
 function moveUp() {
   var bottomNum = offsetNum(dodger.style.bottom)
-  if (bottomNum + dodgerStyle.height < gameStyle.height) {
+  if (bottomNum + offsetNum(dodgerStyle.height) < offsetNum(gameStyle.height)) {
     dodger.style.bottom = `${bottomNum + 1}px`
   }
 }
 
 function moveRight() {
   var leftNum = offSetNum(dodger.style.left)
-  if (leftNum + dodgerStyle.width < gameStyle.width) {
+  if (leftNum + offSetNum(dodgerStyle.width) < offSetNum(gameStyle.width)) {
     dodger.style.left = `${leftNum + 1}px`
   }
   console.log(dodger.style.left)
