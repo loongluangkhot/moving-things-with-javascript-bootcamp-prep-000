@@ -46,7 +46,7 @@ document.addEventListener('keydown', function(e) {
   console.log('im in')
   switch(e.which) {
     case keyWhichDict['left']:
-      console.log('im here')
+      console.log('left')
       moveLeft()
       break;
     case keyWhichDict['up']:
