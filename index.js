@@ -8,7 +8,10 @@ const keyWhichDict = {
 }
 
 var dodger = document.querySelector("#dodger")
-var left = 
+var left = dodger.style.left
+console.log(left)
+
+
 function moveLeft() {
   var leftNum = parseInt(dodger.style.left.replace('px',''))
   if (dodger.style.left > 0) {
