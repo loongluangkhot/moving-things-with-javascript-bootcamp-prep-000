@@ -38,11 +38,9 @@ function moveUp() {
 
 function moveRight() {
   var leftNum = offSetNum(dodger.style.left)
-  console.log(rightNum)
-  if (rightNum > 0) {
-    dodger.style.right = `${rightNum - 1}px`
+  if (leftNum + dodgerStyle.width < gameStyle.width) {
+    dodger.style.left = `${leftNum + 1}px`
   }
-  console.log(dodger.style.right)
 }
 
 function moveDown() {
