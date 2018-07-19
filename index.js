@@ -11,22 +11,31 @@ var dodger = document.querySelector("#dodger")
 
 function moveLeft() {
   var leftNum = parseInt(dodger.style.left.replace('px',''))
-  dodger.style.left = `${leftNum-1}px`
+  if (dodger.style.left > 0) {
+    dodger.style.left = `${leftNum - 1}px`
+  }
 }
 
 function moveUp() {
   var topNum = parseInt(dodger.style.top.replace('px',''))
-  dodger.style.top = `${leftNum-1}px`
+  if (dodger.style.top > 0) {
+    dodger.style.top = `${topNum - 1}px`
+  }
 }
 
-function moveLeft() {
-  var leftNum = parseInt(dodger.style.left.replace('px',''))
-  dodger.style.left = `${leftNum-1}px`
+function moveRight() {
+  var rightNum = parseInt(dodger.style.right.replace('px',''))
+  if (dodger.style.right > 0) {
+    dodger.style.right = `${rightNum - 1}px`
+  }
 }
 
-function moveLeft() {
-  var leftNum = parseInt(dodger.style.left.replace('px',''))
-  dodger.style.left = `${leftNum-1}px`
+function moveDown() {
+  var bottomNum = parseInt(dodger.style.bottom.replace('px',''))
+  if (dodger.style.bottom > 0) {
+    dodger.style.bottom = `${bottomNum - 1}px`
+  }
+  
 }
 
 
