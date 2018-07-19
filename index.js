@@ -41,6 +41,7 @@ function moveRight() {
   if (leftNum + dodgerStyle.width < gameStyle.width) {
     dodger.style.left = `${leftNum + 1}px`
   }
+  console.log(dodger.style.left)
 }
 
 function moveDown() {
