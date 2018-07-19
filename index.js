@@ -9,9 +9,15 @@ const keyWhichDict = {
 
 var dodger = document.querySelector("#dodger")
 var game = document.querySelector("#game")
+var dodgerStyle
+var gameStyle
 
 function offSetNum(offsetStr) {
   return parseInt(offsetStr.replace('px',''))
+}
+
+function computeStyle() {
+  
 }
 
 
