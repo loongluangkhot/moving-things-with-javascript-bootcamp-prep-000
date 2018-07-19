@@ -16,6 +16,10 @@ function offSetNum(offsetStr) {
   return parseInt(offsetStr.replace('px',''))
 }
 
+function computeStyle() {
+  dodgerStyle = window.getComputedStyle(dodger)
+  gameStyle = window.getComputedStyle(game)
+}
 
 function moveLeft() {
   var leftNum = offSetNum(dodger.style.left)
@@ -54,6 +58,7 @@ function moveDown() {
 
 document.addEventListener('keydown', function(e) {
   console.log('keydown')
+  computeStyle()
   switch(e.which) {
     case keyWhichDict['left']:
       moveLeft()
