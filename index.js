@@ -12,7 +12,7 @@ var dodgerStyle = window.getComputedStyle(dodger)
 var game = document.querySelector("#game")
 var gameStyle = window.getComputedStyle(game)
 
-function offSetNum(offsetStr) {
+function offsetNum(offsetStr) {
   return parseInt(offsetStr.replace('px',''))
 }
 
@@ -22,7 +22,7 @@ function computeStyle() {
 }
 
 function moveLeft() {
-  var leftNum = offSetNum(dodger.style.left)
+  var leftNum = offsetNum(dodger.style.left)
   if (leftNum > 0) {
     dodger.style.left = `${leftNum - 1}px`
   }
@@ -37,8 +37,8 @@ function moveUp() {
 }
 
 function moveRight() {
-  var leftNum = offSetNum(dodger.style.left)
-  if (leftNum + offSetNum(dodgerStyle.width) < offSetNum(gameStyle.width)) {
+  var leftNum = offsetNum(dodger.style.left)
+  if (leftNum + offsetNum(dodgerStyle.width) < offsetNum(gameStyle.width)) {
     dodger.style.left = `${leftNum + 1}px`
   }
   console.log(dodger.style.left)
