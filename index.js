@@ -34,6 +34,7 @@ function moveUp() {
   if (bottomNum + offsetNum(dodgerStyle.height) < offsetNum(gameStyle.height)) {
     dodger.style.bottom = `${bottomNum + 1}px`
   }
+  console.log(dodger.style.bottom)
 }
 
 function moveRight() {
@@ -54,7 +55,7 @@ function moveDown() {
 
 
 document.addEventListener('keydown', function(e) {
-  console.log('keydown')
+  console.log('---------------keydown detected---------------')
   computeStyle()
   switch(e.which) {
     case keyWhichDict['left']:
