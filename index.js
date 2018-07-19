@@ -11,6 +11,22 @@ var dodger = document.querySelector("#dodger")
 
 function moveLeft() {
   var leftNum = parseInt(dodger.style.left.replace('px',''))
+  dodger.style.left = `${leftNum-1}px`
+}
+
+function moveUp() {
+  var topNum = parseInt(dodger.style.top.replace('px',''))
+  dodger.style.top = `${leftNum-1}px`
+}
+
+function moveLeft() {
+  var leftNum = parseInt(dodger.style.left.replace('px',''))
+  dodger.style.left = `${leftNum-1}px`
+}
+
+function moveLeft() {
+  var leftNum = parseInt(dodger.style.left.replace('px',''))
+  dodger.style.left = `${leftNum-1}px`
 }
 
 
