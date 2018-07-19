@@ -23,7 +23,7 @@ function computeStyle() {
 
 
 function moveLeft() {
-  var leftNum = offSetNum(dodger.style.left)
+  var leftNum = offSetNum(dodgerStyle.left)
   console.log(leftNum)
   if (leftNum > 0) {
     dodger.style.left = `${leftNum - 1}px`
