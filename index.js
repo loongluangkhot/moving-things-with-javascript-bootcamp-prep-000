@@ -8,8 +8,7 @@ const keyWhichDict = {
 }
 
 var dodger = document.querySelector("#dodger")
-var left = dodger.style.left
-console.log(left)
+var game = document.querySelector("#game")
 
 
 function moveLeft() {
@@ -30,7 +29,8 @@ function moveUp() {
 }
 
 function moveRight() {
-  var rightNum = parseInt(dodger.style.right.replace('px',''))
+  var leftNum = parseInt(dodger.style.left.replace('px',''))
+  var rightNum = 
   console.log(rightNum)
   if (rightNum > 0) {
     dodger.style.right = `${rightNum - 1}px`
