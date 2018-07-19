@@ -8,7 +8,7 @@ const keyWhichDict = {
 }
 
 var dodger = document.querySelector("#dodger")
-var game = document.querySelector("#game")
+var dodgerHeight = window.getComputed
 
 function offSetNum(offsetStr) {
   return parseInt(offsetStr.replace('px',''))
