@@ -16,11 +16,6 @@ function offSetNum(offsetStr) {
   return parseInt(offsetStr.replace('px',''))
 }
 
-function computeStyle() {
-  dodgerStyle = window.getComputedStyle(dodger)
-  gameStyle = window.getComputedStyle(game)
-}
-
 
 function moveLeft() {
   var leftNum = offSetNum(dodgerStyle.left)
