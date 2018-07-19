@@ -46,6 +46,7 @@ function moveRight() {
   if (rightNum > 0) {
     dodger.style.right = `${rightNum - 1}px`
   }
+  console.log(dodger.style.right)
 }
 
 function moveDown() {
