@@ -45,16 +45,16 @@ function moveDown() {
 document.addEventListener('keydown', function(e) {
   console.log('im in')
   switch(e.which) {
-    case keyWhichDict[left]:
+    case keyWhichDict['left']:
       moveLeft()
       break;
-    case keyWhichDict[up]:
+    case keyWhichDict['up']:
       moveUp()
       break;
-    case keyWhichDict[right]:
+    case keyWhichDict['right']:
       moveRight()
       break;
-    case keyWhichDict[down]:
+    case keyWhichDict['down']:
       moveDown()
       break;
   }
