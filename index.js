@@ -10,9 +10,13 @@ const keyWhichDict = {
 var dodger = document.querySelector("#dodger")
 var game = document.querySelector("#game")
 
+function offSetNum(offsetStr) {
+  return parseInt(offsetStr.replace('px',''))
+}
+
 
 function moveLeft() {
-  var leftNum = parseInt(dodger.style.left.replace('px',''))
+  var leftNum = offSetNum(dodger.style.left)
   console.log(leftNum)
   if (leftNum > 0) {
     dodger.style.left = `${leftNum - 1}px`
@@ -30,7 +34,7 @@ function moveUp() {
 
 function moveRight() {
   var leftNum = parseInt(dodger.style.left.replace('px',''))
-  var rightNum = 
+  var rightNum = game.style.width.replace('px','') - (dodger.style.width + dodger.style.left)
   console.log(rightNum)
   if (rightNum > 0) {
     dodger.style.right = `${rightNum - 1}px`
