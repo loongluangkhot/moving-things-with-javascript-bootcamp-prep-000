@@ -7,20 +7,26 @@ const keyWhichDict = {
   down: 40
 }
 
+var dodger = document.querySelector("#dodger")
+
+function moveLeft() {
+  var leftNum = parseInt(dodger.style.left.replace('px',''))
+}
+
 
 document.addEventListener('keydown', function(e) {
   switch(e.which) {
     case keyWhichDict[left]:
       moveLeft()
-      break
+      break;
     case keyWhichDict[up]:
       moveUp()
-      break
+      break;
     case keyWhichDict[right]:
       moveRight()
-      break
+      break;
     case keyWhichDict[down]:
       moveDown()
-      break
+      break;
   }
 })
