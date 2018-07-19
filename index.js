@@ -9,7 +9,8 @@ const keyWhichDict = {
 
 var dodger = document.querySelector("#dodger")
 var dodgerStyle = window.getComputedStyle(dodger)
-var game = 
+var game = document.querySelector("#game")
+var gameStyle = window.getComputedStyle(game)
 
 function offSetNum(offsetStr) {
   return parseInt(offsetStr.replace('px',''))
