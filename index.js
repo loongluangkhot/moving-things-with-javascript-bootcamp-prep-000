@@ -37,7 +37,7 @@ function moveUp() {
 }
 
 function moveRight() {
-  var leftNum = offSetNum(dodgerStyle.left)
+  var leftNum = offSetNum(dodger.style.left)
   console.log(rightNum)
   if (rightNum > 0) {
     dodger.style.right = `${rightNum - 1}px`
