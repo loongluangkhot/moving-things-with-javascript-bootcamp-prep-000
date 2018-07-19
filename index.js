@@ -40,6 +40,7 @@ function moveDown() {
 
 
 document.addEventListener('keydown', function(e) {
+  console.log('im in')
   switch(e.which) {
     case keyWhichDict[left]:
       moveLeft()
