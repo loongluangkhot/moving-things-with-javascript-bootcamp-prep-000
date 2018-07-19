@@ -14,7 +14,7 @@ console.log(left)
 
 function moveLeft() {
   var leftNum = parseInt(dodger.style.left.replace('px',''))
-  if (dodger.style.left > 0) {
+  if (leftNum > 0) {
     dodger.style.left = `${leftNum - 1}px`
   }
   console.log(dodger.style.left)
