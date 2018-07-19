@@ -17,6 +17,7 @@ function moveLeft() {
   if (dodger.style.left > 0) {
     dodger.style.left = `${leftNum - 1}px`
   }
+  console.log(leftNum)
 }
 
 function moveUp() {
