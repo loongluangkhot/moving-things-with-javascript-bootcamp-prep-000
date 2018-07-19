@@ -18,7 +18,7 @@ function offSetNum(offsetStr) {
 
 
 function moveLeft() {
-  var leftNum = offSetNum(dodgerStyle.left)
+  var leftNum = offSetNum(dodger.style.left)
   console.log(leftNum)
   if (leftNum > 0) {
     dodger.style.left = `${leftNum - 1}px`
