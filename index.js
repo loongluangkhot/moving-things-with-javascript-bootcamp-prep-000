@@ -30,7 +30,7 @@ function moveLeft() {
 }
 
 function moveUp() {
-  var bottomNum = parseInt(dodger.style.bottom.replace('px',''))
+  var bottomNum = offsetNum(dodger.style.bottom)
   if (bottomNum + dodgerStyle.height < gameStyle.height) {
     dodger.style.bottom = `${bottomNum + 1}px`
   }
